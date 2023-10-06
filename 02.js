@@ -12,6 +12,15 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  return strings.reduce(function (acumulador, elemento) {
+    if (elemento === strings[0]) {
+      return acumulador = elemento;
+    } else if (elemento.length > acumulador.length) {
+      return acumulador = elemento;
+    } else {
+      return acumulador;
+    }
+  });
 }
 
 // No modifiques nada debajo de esta linea //
